@@ -42,7 +42,7 @@ Below is an example of how this can be done using iDebounce.
     NSLog( @"handleData was called!" );
 }
 
-```objc
+```
 
 
 ## Seeing the difference
