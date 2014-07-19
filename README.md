@@ -10,9 +10,21 @@ However, if your model changes too frequently before the NSFetchedController is 
 
 In this instance, it would be cool if we could intervene and have our method (that's updating our model) only be called one every x seconds ( rather than 20 times within a single second ).
 
-Below is an example of how this can be done using iDebounce.
+## Usage
 
-## Example
+#### [iDebounce debounce:( iDebounceBlock )block withIdentifier:(NSString *)identifier wait:(NSTimeInterval)seconds
+
+Basic Usage:
+
+```objc
+
+[iDebounce debounce:( ^{
+    // The code you want to have debounced here
+} idetnfier:@"Some Identifier" wait:0.3];
+
+```
+
+## Realish Example
 
 ```objc
 // Only showing the .m as this is the only thing that really matters here...
