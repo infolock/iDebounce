@@ -1,7 +1,7 @@
 iDebounce
 =========
 
-One method I love that [underscorejs](http://underscorejs.org) provides is [_.debounce()](http://underscorejs.org/debounce).  Just recently, I needed the same functionality, so I wrote a simple little utility to do this.
+One method I love that [underscorejs](http://underscorejs.org) provides is [_.debounce()](http://underscorejs.org/debounce).  Just recently, I needed the same functionality in an iOS project, so I wrote a simple little utility to do this.
 
 ## Description
 iDebounce is useful when you need to control how often a method is called in x amount of time.  A good example of this would be when working with data that is being displayed within a UICollectionView.  If you happen to use an NSFetchedResultsController to manage this, then a convienence you get is that the CollectionView is updated as your model changes.
