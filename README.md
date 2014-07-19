@@ -22,6 +22,9 @@ __@param__ (`NSString *`) `identifier`  This `identifier` is used by `iDebounce`
 __@param__ (`NSTimeInterval`) `seconds`  The number of seconds that must pass by before the next `iDebounceBlock` can be registered and executed.
 
 
+
+
+
 #### Basic Usage:
 
 ```objc
