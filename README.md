@@ -9,9 +9,15 @@ However, if your model changes too frequently before the NSFetchedController is 
 
 In this instance, it would be cool if we could intervene and have our method (that's updating our model) only be called one every x seconds ( rather than 20 times within a single second ).
 
-## Usage
+Debouncing to the rescue!  A 10,000 foot view is that, when you debounce a method, you are saying "I'm going to pass a method to you ( iDebounce debounce ) that I want to have executed - but I _only_ want to allow it to be executed __once__ every __wait__ amount of seconds.
 
-#### [iDebounce debounce:( iDebounceBlock )block withIdentifier:(NSString *)identifier wait:(NSTimeInterval)seconds
+## Method Signature Information
+
+Here is a brief summary of the params of `debounce`:
+
+> @param (iDebounceBlock) iDebounceBlock  This is the completion block that should be debounced.
+> @param (NSString *) identifier  This identifier is used by iDebounce to track that a given iDebounceBlock has been registered for execution
+> @param (NSTimeInterval) seconds  The number of seconds that must pass by before the next iDebounceBlock can be registered and executed.
 
 Basic Usage:
 
