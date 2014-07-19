@@ -15,9 +15,9 @@ Debouncing to the rescue!  A 10,000 foot view is that, when you debounce a metho
 
 Here is a brief summary of the params of `debounce`:
 
-> @param (iDebounceBlock) iDebounceBlock  This is the completion block that should be debounced.
-> @param (NSString *) identifier  This identifier is used by iDebounce to track that a given iDebounceBlock has been registered for execution
-> @param (NSTimeInterval) seconds  The number of seconds that must pass by before the next iDebounceBlock can be registered and executed.
+_@param_ (`iDebounceBlock`) `iDebounceBlock`  This is the completion block that should be debounced.
+_@param_ (`NSString *`) `identifier`  This `identifier` is used by `iDebounce` to track that a given `iDebounceBlock` has been registered for execution
+_@param_ (`NSTimeInterval`) `seconds`  The number of seconds that must pass by before the next `iDebounceBlock` can be registered and executed.
 
 Basic Usage:
 
