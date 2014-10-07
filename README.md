@@ -2,7 +2,7 @@ iDebounce
 =========
 
 ![Unmaintained](https://img.shields.io/badge/%E2%9A%A0-unmaintained-red.svg?style=flat)
-Yet another Objective-C repo that will remain unmaintained indefinitely or until I can write a Swift version to replace it.
+> Yet another Objective-C repo that will remain unmaintained indefinitely or until I can write a Swift version to replace it.
 
 One method I love that [underscorejs](http://underscorejs.org) provides is [_.debounce()](http://underscorejs.org/debounce).  Just recently, I needed the same functionality in an iOS project.  Enter __iDebounce__.
 
