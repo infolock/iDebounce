@@ -48,15 +48,15 @@
 
 +(void)debounce:( iDebounceBlock )block withIdentifier:(NSString *)identifier wait:( NSTimeInterval )seconds {
 
-    hbUtils *utils = [[self class] sharedInstance];
+    iDebounce *instance = [[self class] sharedInstance];
 
-    if( [utils.iDebounceBlockMap objectForKey:identifier] ) {
+    if( [instance.iDebounceBlockMap objectForKey:identifier] ) {
         return;
     }
 
-    [NSTimer scheduledTimerWithTimeInterval:seconds target:utils selector:@selector( executeDebouncedBlockForTimer: ) userInfo:@{ @"name": identifier } repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:seconds target:instance selector:@selector( executeDebouncedBlockForTimer: ) userInfo:@{ @"name": identifier } repeats:NO];
 
-    [utils.iDebounceBlockMap setObject:block forKey:identifier];
+    [instance.iDebounceBlockMap setObject:block forKey:identifier];
 }
 
 
