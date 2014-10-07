@@ -1,6 +1,9 @@
 iDebounce
 =========
 
+![Unmaintained](https://img.shields.io/badge/%E2%9A%A0-unmaintained-red.svg?style=flat)
+Yet another Objective-C repo that will remain unmaintained indefinitely or until I can write a Swift version to replace it.
+
 One method I love that [underscorejs](http://underscorejs.org) provides is [_.debounce()](http://underscorejs.org/debounce).  Just recently, I needed the same functionality in an iOS project.  Enter __iDebounce__.
 
 __iDebounce__ is useful when you need to control how often a method is called in x amount of time.  A good example of this would be when working with data that is being displayed within a UICollectionView.  If you happen to use an NSFetchedResultsController to manage this, then a convienence you get is that the CollectionView is updated as your model changes.
